@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Md Shahabuddin — CSE student and aspiring Python developer portfolio.">
-  <title>Md. Shahabuddin | Python Developer</title>
+  <title>Md Shahabuddin | Python Developer</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Professional Social Icons ke liye FontAwesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -24,6 +25,7 @@
   </header>
 
   <main>
+    <!-- HERO SECTION -->
     <section id="home" class="hero">
       <div class="hero-copy reveal">
         <p class="eyebrow">CSE STUDENT • PYTHON DEVELOPER</p>
@@ -35,6 +37,7 @@
           <a class="btn ghost" href="https://github.com/Shahabuddin107" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub ↗</a>
         </div>
 
+        <!-- Social Media Rounded Icons -->
         <div class="socials-bar">
           <a href="https://www.linkedin.com/in/md-shahabuddin-5b2908366/" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://github.com/Shahabuddin107" target="_blank" rel="noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -48,11 +51,12 @@
       <div class="hero-photo reveal">
         <div class="glow"></div>
         <!-- Single Professional Suit Photo -->
-        <img src="assets/profile.png" alt="Md Shahabuddin">
+        <img src="assets/portfile.png" alt="Md Shahabuddin">
         <div class="photo-card"><b>01</b><span>Developer Portfolio</span></div>
       </div>
     </section>
 
+    <!-- ABOUT SECTION -->
     <section id="about" class="section about">
       <div class="section-head">
         <p class="eyebrow">ABOUT ME</p>
@@ -65,11 +69,12 @@
         <div class="facts">
           <div><strong>Father</strong><small>Md Umar</small></div>
           <div><strong>Family</strong><small>Parents, 2 Brothers & 2 Sisters</small></div>
-          <div><strong>Roots</strong><small>Garri,jale, Darbhanga, Bihar</small></div>
+          <div><strong>Roots</strong><small>Garri, Jale, Darbhanga, Bihar</small></div>
         </div>
       </div>
     </section>
 
+    <!-- SKILLS SECTION -->
     <section id="skills" class="section">
       <div class="section-head">
         <p class="eyebrow">MY SKILLS</p>
@@ -85,23 +90,60 @@
       </div>
     </section>
 
+    <!-- PROJECTS SECTION (WITH PLAY / RUN BUTTONS) -->
     <section id="projects" class="section projects">
       <div class="section-head">
-        <p class="eyebrow">FEATURED PROJECT</p>
-        <h2>Things I <span>build.</span></h2>
+        <p class="eyebrow">FEATURED PROJECTS</p>
+        <h2>Things I <span>build & run.</span></h2>
       </div>
+
+      <!-- Project 01: Jarvis Voice Assistant -->
       <article class="project-card">
         <div class="project-number">01</div>
         <div class="project-content">
-          <p class="tag">PYTHON • VOICE ASSISTANT • AUTOMATION</p>
+          <p class="tag">PYTHON • VOICE ASSISTANT • AI AUTOMATION</p>
           <h3>Jarvis Voice Assistant</h3>
-          <p>A Python-based voice assistant project designed to understand spoken commands and perform useful desktop and web actions. The project is being developed with a focus on voice interaction, automation and future AI capabilities.</p>
-          <div class="chips"><span>Python</span><span>Speech Recognition</span><span>Text-to-Speech</span><span>Automation</span></div>
-          <a href="https://github.com/Shahabuddin107" target="_blank" rel="noreferrer" class="project-link">Explore on GitHub ↗</a>
+          <p>A smart voice assistant engineered in Python that understands speech commands, controls desktop tasks, and executes backend system automation workflows.</p>
+          <div class="chips"><span>Python</span><span>SpeechRecognition</span><span>pyttsx3</span><span>Automation</span><span>OS APIs</span></div>
+          <div class="buttons" style="margin-top: 15px;">
+            <a href="https://github.com/Shahabuddin107" target="_blank" rel="noreferrer" class="btn primary" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-solid fa-play"></i> Run Live / Demo ↗</a>
+            <a href="https://github.com/Shahabuddin107" target="_blank" rel="noreferrer" class="btn ghost" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 02: Python Interactive Game -->
+      <article class="project-card" style="margin-top: 30px;">
+        <div class="project-number">02</div>
+        <div class="project-content">
+          <p class="tag">GAME DEVELOPMENT • PYTHON • INTERACTIVE LOGIC</p>
+          <h3>Python Interactive Game</h3>
+          <p>An interactive playable game built with Python OOP, dynamic collision physics, keyboard event controls, level progression, and real-time score tracking.</p>
+          <div class="chips"><span>Python</span><span>Pygame</span><span>OOP</span><span>Game Physics</span></div>
+          <div class="buttons" style="margin-top: 15px;">
+            <a href="https://github.com/Shahabuddin107" target="_blank" rel="noreferrer" class="btn primary" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-solid fa-gamepad"></i> Play Game / Launch ↗</a>
+            <a href="https://github.com/Shahabuddin107" target="_blank" rel="noreferrer" class="btn ghost" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 03: Database Backend System -->
+      <article class="project-card" style="margin-top: 30px;">
+        <div class="project-number">03</div>
+        <div class="project-content">
+          <p class="tag">BACKEND • DATABASE • PYTHON & SQL</p>
+          <h3>Student Record Management System</h3>
+          <p>Full-fledged backend data management software managing relational databases, SQL queries, user authentication, and secure record storage.</p>
+          <div class="chips"><span>Python</span><span>MySQL / SQLite</span><span>DBMS</span><span>CRUD Operations</span></div>
+          <div class="buttons" style="margin-top: 15px;">
+            <a href="https://github.com/Shahabuddin107" target="_blank" rel="noreferrer" class="btn primary" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-solid fa-server"></i> Launch Backend ↗</a>
+            <a href="https://github.com/Shahabuddin107" target="_blank" rel="noreferrer" class="btn ghost" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> View Repo</a>
+          </div>
         </div>
       </article>
     </section>
 
+    <!-- EDUCATION SECTION -->
     <section id="education" class="section education">
       <div class="section-head">
         <p class="eyebrow">EDUCATION</p>
@@ -123,13 +165,14 @@
       </div>
     </section>
 
+    <!-- HOBBIES & FAVORITES SECTION -->
     <section id="interests" class="section">
       <div class="section-head">
         <p class="eyebrow">BEYOND THE CODE</p>
         <h2>Passions, Hobbies & <span>Favorites.</span></h2>
       </div>
       <div class="skills">
-        <div class="skill"><b>🏏 Cricket & Playing</b><span>Playing cricket matches & active sports</span></div>
+        <div class="skill"><b>🏏 Cricket & Playing</b><span>Playing cricket matches, outdoor sports & fitness</span></div>
         <div class="skill"><b>💛 Favorite Color</b><span>Yellow</span></div>
         <div class="skill"><b>🍛 Favorite Dish</b><span>Biryani</span></div>
         <div class="skill"><b>🏆 Favorite Player</b><span>MS Dhoni</span></div>
@@ -138,11 +181,12 @@
       </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section id="contact" class="section contact">
       <div class="contact-box">
         <p class="eyebrow">GET IN TOUCH</p>
         <h2>Let's build something <span>useful.</span></h2>
-        <p>Connect ya direct collaborate karne ke liye kisi bhi platform par reach out karein:</p>
+        <p>Interested in connecting, collaborating or discussing a project? Reach out directly:</p>
         
         <div class="contact-social-icons">
           <a href="mailto:Shahabuddincse107@gmail.com" class="icon-circle" title="Gmail"><i class="fa-solid fa-envelope"></i></a>
