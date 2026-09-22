@@ -8,8 +8,24 @@
   <link rel="stylesheet" href="style.css">
   <!-- Professional Social Icons ke liye FontAwesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Interactive Bubble Background CSS -->
+  <style>
+    #bubbleCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1; /* Text aur buttons ke piche rahega */
+      pointer-events: none; /* Mouse clicks portfolio ke links par seedhe lagenge */
+    }
+  </style>
 </head>
 <body>
+  <!-- Background Bubble Canvas -->
+  <canvas id="bubbleCanvas"></canvas>
+
   <header class="nav">
     <a class="brand" href="#home">MS<span>.</span></a>
     <nav>
@@ -50,8 +66,7 @@
 
       <div class="hero-photo reveal">
         <div class="glow"></div>
-        <!-- Profile Image Path Fixed -->
-  <img src="myphoto.jpg" alt="Md Shahabuddin">
+        <<img src="myphoto.jpg" alt="Md Shahabuddin">!-- Profile Image Path Fixed -->
         <div class="photo-card"><b>01</b><span>Developer Portfolio</span></div>
       </div>
     </section>
@@ -204,6 +219,91 @@
   </main>
 
   <footer>© 2026 Md Shahabuddin. Built with passion & code.</footer>
+
+  <!-- Aapka existing script file -->
   <script src="script.js"></script>
+
+  <!-- Interactive Cursor Bubble Effect Script -->
+  <script>
+    const canvas = document.getElementById('bubbleCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let width = (canvas.width = window.innerWidth);
+    let height = (canvas.height = window.innerHeight);
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    const bubbles = [];
+
+    class Bubble {
+      constructor(x, y) {
+        this.x = x;
+        this.y = y;
+        this.size = Math.random() * 6 + 4;
+        this.maxSize = Math.random() * 26 + 14;
+        this.speedX = (Math.random() - 0.5) * 2;
+        this.speedY = Math.random() * -2.2 - 0.6; // Upar ki taraf float
+        this.opacity = 0.9;
+        // Neon green aur cyan theme ke match bubbles
+        const hues = [150, 165, 185];
+        this.color = hues[Math.floor(Math.random() * hues.length)];
+      }
+
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.size < this.maxSize) {
+          this.size += 0.5; // Bubble phoolta hai
+        }
+        this.opacity -= 0.012; // Dheere dheere fade out
+      }
+
+      draw() {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${this.color}, 90%, 60%, ${this.opacity * 0.25})`;
+        ctx.fill();
+        ctx.lineWidth = 1.5;
+        ctx.strokeStyle = `hsla(${this.color}, 95%, 70%, ${this.opacity})`;
+        ctx.stroke();
+        ctx.restore();
+      }
+    }
+
+    // Cursor move hone par bubbles generate honge
+    window.addEventListener('mousemove', (e) => {
+      for (let i = 0; i < 3; i++) {
+        bubbles.push(new Bubble(e.clientX, e.clientY));
+      }
+    });
+
+    // Mobile / Touch support
+    window.addEventListener('touchmove', (e) => {
+      const touch = e.touches[0];
+      bubbles.push(new Bubble(touch.clientX, touch.clientY));
+    });
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+
+      for (let i = 0; i < bubbles.length; i++) {
+        bubbles[i].update();
+        bubbles[i].draw();
+
+        if (bubbles[i].opacity <= 0) {
+          bubbles.splice(i, 1);
+          i--;
+        }
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
 </body>
 </html>
