@@ -187,10 +187,10 @@ body {
   box-shadow: 0 5px 15px var(--accent-glow);
 }
 
-/* Hero Photo Card */
+/* Hero Photo Card & Enhanced Profile Styling */
 .hero-photo {
   position: relative;
-  width: 380px;
+  width: 360px;
   max-width: 100%;
 }
 
@@ -205,17 +205,25 @@ body {
   filter: blur(80px);
   border-radius: 50%;
   z-index: -1;
+  pointer-events: none;
 }
 
 .hero-photo img {
   width: 100%;
-  height: 450px;
+  height: 440px;
   object-fit: cover;
   object-position: top center;
-  border-radius: 20px;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border-radius: 24px;
+  border: 2px solid rgba(0, 210, 106, 0.25);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
   display: block;
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-photo:hover img {
+  transform: translateY(-4px) scale(1.01);
+  border-color: var(--accent-color);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.8), 0 0 25px var(--accent-glow);
 }
 
 .photo-card {
@@ -223,14 +231,15 @@ body {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background: rgba(11, 15, 25, 0.75);
-  backdrop-filter: blur(10px);
+  background: rgba(11, 15, 25, 0.82);
+  backdrop-filter: blur(12px);
   padding: 14px 20px;
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   gap: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .photo-card b {
@@ -262,37 +271,25 @@ body {
 }
 
 /* About Section */
-.about-grid {
-  display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 45px;
-  align-items: center;
+.about-content-full {
+  max-width: 850px;
 }
 
-.about-grid img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: 18px;
-  border: 1px solid var(--border-color);
-}
-
-.about-grid .big {
+.about-content-full .big {
   font-size: 1.35rem;
   font-weight: 600;
   color: #fff;
   margin-bottom: 18px;
 }
 
-.about-grid p {
+.about-content-full p {
   color: var(--text-secondary);
   margin-bottom: 25px;
 }
 
 .facts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 18px;
   margin-top: 25px;
 }
@@ -300,19 +297,20 @@ body {
 .facts div {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  padding: 15px;
-  border-radius: 10px;
+  padding: 18px;
+  border-radius: 12px;
 }
 
 .facts div strong {
   display: block;
   font-size: 1rem;
   color: var(--accent-color);
+  margin-bottom: 4px;
 }
 
 .facts div small {
   color: var(--text-secondary);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 /* Skills & Interests Grid */
@@ -356,6 +354,11 @@ body {
   border-radius: 16px;
   padding: 35px;
   gap: 30px;
+  transition: border-color 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(0, 210, 106, 0.3);
 }
 
 .project-number {
@@ -531,11 +534,11 @@ footer {
   }
 
   .hero-photo {
-    width: 280px;
+    width: 290px;
   }
 
   .hero-photo img {
-    height: 340px;
+    height: 350px;
   }
 
   .hero-copy h1 {
@@ -544,10 +547,6 @@ footer {
 
   .buttons, .socials-bar {
     justify-content: center;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
   }
 
   .project-card {
