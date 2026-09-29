@@ -66,8 +66,8 @@
 
       <div class="hero-photo reveal">
         <div class="glow"></div>
-        <!-- Profile Image yahan theek kar di gayi hai -->
-        <img src="myphoto.jpg" alt="Md Shahabuddin">
+        <!-- Profile Image Corrected -->
+        <img src="portfile.jpg" alt="Md Shahabuddin">
         <div class="photo-card"><b>01</b><span>Developer Portfolio</span></div>
       </div>
     </section>
@@ -221,7 +221,7 @@
 
   <footer>© 2026 Md Shahabuddin. Built with passion & code.</footer>
 
-  <!-- Aapka existing script file -->
+  <!-- Script file -->
   <script src="script.js"></script>
 
   <!-- Interactive Cursor Bubble Effect Script -->
@@ -246,9 +246,8 @@
         this.size = Math.random() * 6 + 4;
         this.maxSize = Math.random() * 26 + 14;
         this.speedX = (Math.random() - 0.5) * 2;
-        this.speedY = Math.random() * -2.2 - 0.6; // Upar ki taraf float
+        this.speedY = Math.random() * -2.2 - 0.6;
         this.opacity = 0.9;
-        // Neon green aur cyan theme ke match bubbles
         const hues = [150, 165, 185];
         this.color = hues[Math.floor(Math.random() * hues.length)];
       }
@@ -257,9 +256,9 @@
         this.x += this.speedX;
         this.y += this.speedY;
         if (this.size < this.maxSize) {
-          this.size += 0.5; // Bubble phoolta hai
+          this.size += 0.5;
         }
-        this.opacity -= 0.012; // Dheere dheere fade out
+        this.opacity -= 0.012;
       }
 
       draw() {
@@ -275,14 +274,12 @@
       }
     }
 
-    // Cursor move hone par bubbles generate honge
     window.addEventListener('mousemove', (e) => {
       for (let i = 0; i < 3; i++) {
         bubbles.push(new Bubble(e.clientX, e.clientY));
       }
     });
 
-    // Mobile / Touch support
     window.addEventListener('touchmove', (e) => {
       const touch = e.touches[0];
       bubbles.push(new Bubble(touch.clientX, touch.clientY));
