@@ -17,8 +17,8 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      z-index: -1; /* Text aur buttons ke piche rahega */
-      pointer-events: none; /* Mouse clicks portfolio ke links par seedhe lagenge */
+      z-index: -1;
+      pointer-events: none;
     }
   </style>
 </head>
@@ -50,6 +50,8 @@
         
         <div class="buttons">
           <a class="btn primary" href="#projects">View My Projects</a>
+          <!-- Resume Download Button -->
+          <a class="btn primary" href="resume.pdf" download="Md_Shahabuddin_Resume.pdf" target="_blank" rel="noreferrer" style="background: linear-gradient(135deg, #10b981, #059669);"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
           <a class="btn ghost" href="https://github.com/Shahabuddin107" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub ↗</a>
         </div>
 
@@ -60,7 +62,7 @@
           <a href="https://instagram.com/Shahabuddin_x107" target="_blank" rel="noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://www.facebook.com/search/top?q=Md%20Shahabuddin" target="_blank" rel="noreferrer" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="https://snapchat.com/add/yasu_x107" target="_blank" rel="noreferrer" title="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
-          <a href="mailto:Shahabuddincse107@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="mailto:shahabuddincse107@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
 
@@ -80,12 +82,17 @@
       </div>
       <div class="about-content-full">
         <p class="big">I'm a Computer Science & Engineering student focused on turning ideas into useful digital projects.</p>
-        <p>I enjoy learning Python, SQL, HTML, JavaScript and React, while building projects that strengthen my programming and problem-solving skills. My current focus is growing as a developer and exploring voice assistants, web apps, machine learning and automation.</p>
+        <p>Motivated CSE undergraduate with solid fundamentals in software engineering, data structures, and modern web applications[cite: 3]. I develop end-to-end applications across Python, JavaScript, and Machine Learning[cite: 3].</p>
         
         <div class="facts">
+          <div><strong>Degree</strong><small>B.Tech CSE (8.09 CGPA)</small></div>
+          <div><strong>College</strong><small>GITM (MDU Rohtak)</small></div>
           <div><strong>Father</strong><small>Md Umar</small></div>
-          <div><strong>Family</strong><small>Parents, 2 Brothers & 2 Sisters</small></div>
           <div><strong>Roots</strong><small>Garri, Jale, Darbhanga, Bihar</small></div>
+        </div>
+
+        <div style="margin-top: 25px;">
+          <a class="btn primary" href="resume.pdf" download="Md_Shahabuddin_Resume.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-pdf"></i> Download Full Resume (PDF)</a>
         </div>
       </div>
     </section>
@@ -97,12 +104,12 @@
         <h2>Tools I’m <span>working with.</span></h2>
       </div>
       <div class="skills">
-        <div class="skill"><b>Python</b><span>Programming & automation</span></div>
-        <div class="skill"><b>JavaScript & React</b><span>Interactive web development</span></div>
-        <div class="skill"><b>SQL & DBMS</b><span>Database architecture</span></div>
-        <div class="skill"><b>Pandas & ML</b><span>Data analytics & regression</span></div>
-        <div class="skill"><b>HTML5 & CSS3</b><span>Modern responsive UI</span></div>
-        <div class="skill"><b>GitHub & Deployment</b><span>Version control & hosting</span></div>
+        <div class="skill"><b>Python & C++</b><span>Core programming & OOP[cite: 3]</span></div>
+        <div class="skill"><b>JavaScript & React</b><span>Interactive frontend web apps[cite: 3]</span></div>
+        <div class="skill"><b>SQL & DBMS</b><span>MySQL, schema design & queries[cite: 3]</span></div>
+        <div class="skill"><b>Pandas & NumPy</b><span>Data wrangling, cleaning & EDA[cite: 3]</span></div>
+        <div class="skill"><b>Scikit-Learn & ML</b><span>Supervised regression & Streamlit[cite: 3]</span></div>
+        <div class="skill"><b>Git & GitHub</b><span>Version control & web hosting[cite: 3]</span></div>
       </div>
     </section>
 
@@ -134,7 +141,7 @@
         <div class="project-content">
           <p class="tag">WEB APP • JAVASCRIPT • REAL-TIME UI</p>
           <h3>Modern Digital Clock App ⏰</h3>
-          <p>A precision real-time digital clock featuring live system time synchronization, sleek dark neon interface, dynamic seconds counter, and calendar date displays.</p>
+          <p>Responsive digital clock displaying real-time hours, minutes, seconds, and dates with dynamic JavaScript interval handlers and sleek transitions[cite: 3].</p>
           <div class="chips"><span>JavaScript</span><span>CSS3</span><span>DOM Events</span><span>GitHub Pages</span></div>
           <div class="buttons" style="margin-top: 15px;">
             <a href="https://shahabuddin107.github.io/Digital-Clock-App/" target="_blank" rel="noreferrer" class="btn primary" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-solid fa-clock"></i> Open Clock Live ↗</a>
@@ -149,7 +156,7 @@
         <div class="project-content">
           <p class="tag">WEB UTILITY • AUDIO • DOCUMENT INTERFACE</p>
           <h3>DocuSnap Soundbox 📄🔊</h3>
-          <p>An interactive document capture and audio soundbox tool engineered to provide audio-visual feedback, document scanning previews, and real-time user feedback.</p>
+          <p>An interactive document capture and audio soundbox tool engineered to provide audio-visual feedback, document scanning previews, and real-time interaction.</p>
           <div class="chips"><span>JavaScript</span><span>Audio Web API</span><span>UI Interactive</span><span>GitHub Pages</span></div>
           <div class="buttons" style="margin-top: 15px;">
             <a href="https://shahabuddin107.github.io/docusnap-soundbox/" target="_blank" rel="noreferrer" class="btn primary" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-solid fa-volume-high"></i> Launch Soundbox Live ↗</a>
@@ -164,7 +171,7 @@
         <div class="project-content">
           <p class="tag">DATA SCIENCE • PYTHON PANDAS • CSV ANALYZER</p>
           <h3>Panda CSV Reader & Basic Analysis 🐼📊</h3>
-          <p>A comprehensive Python data analysis pipeline utilizing Pandas to parse raw CSV datasets, perform data cleaning, compute summary metrics, and evaluate trends.</p>
+          <p>Complete Exploratory Data Analysis (EDA) pipeline performing data cleaning, missing value imputation, multi-dimensional grouping, and statistical metrics[cite: 3].</p>
           <div class="chips"><span>Python</span><span>Pandas</span><span>CSV Parser</span><span>Data Analytics</span></div>
           <div class="buttons" style="margin-top: 15px;">
             <a href="https://shahabuddin107.github.io/syntecxhub-Panda-CSV-reader-basic-analysis/" target="_blank" rel="noreferrer" class="btn primary" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-solid fa-chart-pie"></i> View Analysis Live ↗</a>
@@ -177,10 +184,10 @@
       <article class="project-card" style="margin-top: 30px;">
         <div class="project-number">05</div>
         <div class="project-content">
-          <p class="tag">MACHINE LEARNING • PYTHON • REGRESSION</p>
+          <p class="tag">MACHINE LEARNING • PYTHON • STREAMLIT</p>
           <h3>Salary Prediction Model 📈</h3>
-          <p>Trained predictive machine learning model leveraging Scikit-Learn to estimate software engineering compensation based on experience levels, skill sets, and education.</p>
-          <div class="chips"><span>Python</span><span>Scikit-Learn</span><span>Regression</span><span>Pandas</span></div>
+          <p>Supervised linear regression model estimating developer compensation based on experience, built with Scikit-Learn and deployed on Streamlit Cloud[cite: 3].</p>
+          <div class="chips"><span>Python</span><span>Scikit-Learn</span><span>Regression</span><span>Streamlit</span></div>
           <div class="buttons" style="margin-top: 15px;">
             <a href="https://shahabuddin107.github.io/Salary-Prediction-Model/" target="_blank" rel="noreferrer" class="btn primary" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-solid fa-chart-line"></i> Predict Salary Live ↗</a>
             <a href="https://github.com/Shahabuddin107/Salary-Prediction-Model" target="_blank" rel="noreferrer" class="btn ghost" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> Source Code</a>
@@ -224,7 +231,7 @@
         <div class="project-content">
           <p class="tag">WEB GIS • LEAFLET.JS • API INTEGRATION</p>
           <h3>Live Interactive World Map 🌍</h3>
-          <p>An interactive global mapping web application featuring location search, geographic markers, OpenStreetMap tile integration, and user geolocation tracking.</p>
+          <p>Interactive mapping application featuring client-side geolocation pinpointing, search functionality, custom markers, and smooth responsive zoom controls[cite: 3].</p>
           <div class="chips"><span>JavaScript</span><span>Leaflet.js</span><span>OpenStreetMap API</span><span>Geolocation</span></div>
           <div class="buttons" style="margin-top: 15px;">
             <a href="https://shahabuddin107.github.io/live-world-map/" target="_blank" rel="noreferrer" class="btn primary" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-solid fa-map-location-dot"></i> Open Live Map ↗</a>
@@ -233,28 +240,13 @@
         </div>
       </article>
 
-      <!-- Project 09: Notex - React Notes Application -->
+      <!-- Project 09: Jarvis Voice Assistant -->
       <article class="project-card" style="margin-top: 30px;">
         <div class="project-number">09</div>
         <div class="project-content">
-          <p class="tag">FRONTEND • REACT.JS • LOCAL STORAGE</p>
-          <h3>Notex — Smart Note-Taking App 📝</h3>
-          <p>A modern and clean React-based note-taking web app with category tagging, instant keyword filtering, real-time editing, and persistent local storage.</p>
-          <div class="chips"><span>React.js</span><span>JavaScript</span><span>Hooks</span><span>LocalStorage</span></div>
-          <div class="buttons" style="margin-top: 15px;">
-            <a href="https://shahabuddin107.github.io/Notex/" target="_blank" rel="noreferrer" class="btn primary" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open App Live ↗</a>
-            <a href="https://github.com/Shahabuddin107/Notex" target="_blank" rel="noreferrer" class="btn ghost" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> Source Code</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 10: Jarvis Voice Assistant -->
-      <article class="project-card" style="margin-top: 30px;">
-        <div class="project-number">10</div>
-        <div class="project-content">
           <p class="tag">PYTHON • VOICE ASSISTANT • AI AUTOMATION</p>
           <h3>Jarvis Voice Assistant 🎙️</h3>
-          <p>A smart voice assistant built in Python that takes voice commands to automate system tasks, open websites, search online, and perform text-to-speech feedback.</p>
+          <p>Voice-activated assistant processing spoken commands to automate routine workflows, trigger web searches, launch local apps, and read responses aloud[cite: 3].</p>
           <div class="chips"><span>Python</span><span>SpeechRecognition</span><span>pyttsx3</span><span>Automation</span><span>OS APIs</span></div>
           <div class="buttons" style="margin-top: 15px;">
             <a href="https://github.com/Shahabuddin107/Jarvis" target="_blank" rel="noreferrer" class="btn primary" style="padding: 9px 18px; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> View Jarvis Code ↗</a>
@@ -273,15 +265,15 @@
       <div class="timeline">
         <div class="timeline-item">
           <span class="dot"></span>
-          <div><small>COLLEGE</small><h3>Ganga Institute of Technology and Management</h3><p>Computer Science & Engineering (CSE)</p></div>
+          <div><small>COLLEGE (2024 - PRESENT)</small><h3>Ganga Institute of Technology and Management (MDU Rohtak)</h3><p>B.Tech in Computer Science & Engineering • <strong>8.09 CGPA</strong></p></div>
         </div>
         <div class="timeline-item">
           <span class="dot"></span>
-          <div><small>CLASS XII</small><h3>63%</h3><p>Higher Secondary Education</p></div>
+          <div><small>CLASS XII</small><h3>63.6%</h3><p>Senior Secondary Board Education</p></div>
         </div>
         <div class="timeline-item">
           <span class="dot"></span>
-          <div><small>CLASS X</small><h3>66%</h3><p>Secondary Education</p></div>
+          <div><small>CLASS X</small><h3>66.6%</h3><p>Secondary School Examination</p></div>
         </div>
       </div>
     </section>
@@ -310,15 +302,16 @@
         <p>Interested in connecting, collaborating or discussing a project? Reach out directly:</p>
         
         <div class="contact-social-icons">
-          <a href="mailto:Shahabuddincse107@gmail.com" class="icon-circle" title="Gmail"><i class="fa-solid fa-envelope"></i></a>
+          <a href="mailto:shahabuddincse107@gmail.com" class="icon-circle" title="Gmail"><i class="fa-solid fa-envelope"></i></a>
           <a href="https://instagram.com/Shahabuddin_x107" target="_blank" rel="noreferrer" class="icon-circle" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/md-shahabuddin-5b2908366/" target="_blank" rel="noreferrer" class="icon-circle" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://snapchat.com/add/yasu_x107" target="_blank" rel="noreferrer" class="icon-circle" title="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
           <a href="https://www.facebook.com/search/top?q=Md%20Shahabuddin" target="_blank" rel="noreferrer" class="icon-circle" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
 
-        <div class="buttons" style="margin-top: 25px;">
-          <a class="btn primary" href="mailto:Shahabuddincse107@gmail.com"><i class="fa-solid fa-envelope"></i> Gmail</a>
+        <div class="buttons" style="margin-top: 25px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a class="btn primary" href="mailto:shahabuddincse107@gmail.com"><i class="fa-solid fa-envelope"></i> Gmail</a>
+          <a class="btn ghost" href="resume.pdf" download="Md_Shahabuddin_Resume.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-download"></i> Get Resume (PDF)</a>
         </div>
       </div>
     </section>
